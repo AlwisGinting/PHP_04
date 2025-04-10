@@ -1,6 +1,6 @@
 Fungsi getGanjil($angka1, $angka2) akan mengembalikan array berisi bilangan ganjil dari angka pertama hingga angka kedua.
 
-Output sesuai contoh:
+Output sesuai contoh yang diberikan:
 
 php
 Salin
