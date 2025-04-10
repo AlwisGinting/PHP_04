@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bilangan Ganjil dalam Range</title>
+</head>
+<body>
+
+<h2>Bilangan Ganjil Antara Dua Angka</h2>
+
+<?php
+function getGanjil($angka1, $angka2) {
+    $ganjil = [];
+
+    for ($i = $angka1; $i <= $angka2; $i++) {
+        if ($i % 2 != 0) {
+            // Tambahkan bilangan ganjil ke array
+            $ganjil[] = $i;
+        }
+    }
+
+    return $ganjil;
+}
+
+// Contoh penggunaan:
+$angka1 = 2;
+$angka2 = 5;
+
+$hasil = getGanjil($angka1, $angka2);
+
+// Tampilkan hasil
+echo "Bilangan ganjil dari $angka1 sampai $angka2 adalah:<br>[";
+for ($i = 0; $i < count($hasil); $i++) {
+    echo $hasil[$i];
+    if ($i < count($hasil) - 1) {
+        echo ", ";
+    }
+}
+echo "]";
+?>
+
+</body>
+</html>
